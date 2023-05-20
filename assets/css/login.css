@@ -1,0 +1,100 @@
+:root{
+    --color-yellow:#FFB30D;
+    --color-white:white;
+    --color-gray:#7A7A7A;
+    --color-aqua:#085454;
+    --color-darkblue:#001542;
+}
+
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.body_cadastro {
+    background-color: var(--color-white);
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.main_cadastro {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border: 2px solid var(--color-gray);
+    border-radius: 10px;
+    padding: 60px;
+
+}
+
+.form_cadastro {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.form_cadastro > label > input {
+
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 1px solid var(--color-gray);
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+
+.sendBtn {
+
+    width: 45%;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-yellow);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: ease .2s;
+    font-size:large ;
+}
+
+.sendBtn:hover {
+    transform: scale(1.05);
+    background-color: var(--color-yellow);
+    transition: ease .2s;
+    
+}
+
+.legend_cad {
+
+    letter-spacing: 4px;
+    color: var(--color-red);
+    
+}
+
+#tema{
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#tipo{
+    padding: 10px;
+    border-radius: 8px;
+}
